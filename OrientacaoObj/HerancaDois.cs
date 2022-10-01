@@ -52,6 +52,11 @@ class BigKing : Moto
     {
         return AlterarVelocidade(20); ;
     }
+
+    public new int Frear() // Usando new para sobrescrever sem usar virtual
+    {
+        return AlterarVelocidade(20);
+    }
 }
 
 internal class HerancaDois
