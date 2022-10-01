@@ -67,6 +67,7 @@ namespace CursoCSharp
 
                 // Orientação a Objetos
                 {"Herança - POO", Heranca.Executar},
+                {"HerançaDois - POO", HerancaDois.Executar},
 
             });
 

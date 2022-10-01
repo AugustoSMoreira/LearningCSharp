@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace LearningCSharp.OrientacaoObj;
 
 // Abaixo temos nossa classe carro, utilizando encapsulamento e abstração
-internal class Carro
+class Carro
 {
     private int VelocidadeAtual;
     protected readonly int VelocidadeMaxima;
 
-    public Carro(int velocidadeMaxima)
+    protected Carro(int velocidadeMaxima)
     {
         VelocidadeMaxima = velocidadeMaxima;
     }
