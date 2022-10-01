@@ -4,6 +4,7 @@ using LearningCSharp.ClassesMetodos;
 using LearningCSharp.EstruturaDeControle;
 using LearningCSharp.Fundamentos;
 using LearningCSharp.Colecoes;
+using LearningCSharp.OrientacaoObj;
 
 namespace CursoCSharp
 {
@@ -63,6 +64,10 @@ namespace CursoCSharp
                 {"Queue - Coleções", QueueAula.Executar},
                 {"Igualdade - Coleções", Igualdade.Executar},
                 {"Dictionary - Coleções", DictionaryAula.Executar},
+
+                // Orientação a Objetos
+                {"Herança - POO", Heranca.Executar},
+
             });
 
             central.SelecionarEExecutar();
