@@ -7,13 +7,25 @@ using System.Threading.Tasks;
 namespace LearningCSharp.Colecoes;
 public class Produto
 {
+    public Produto(string titulo, double preco)
+    {
+        Titulo = titulo ?? throw new ArgumentNullException(nameof(titulo));
+        Preco = preco;
+    }
+
     public string Titulo { get; set; }
     public double Preco { get; set; }
 
-    public Produto(string titulo, double preco)
+    public override bool Equals(object? obj)
     {
-        Titulo = titulo;
-        Preco = preco;
+        return obj is Produto produto &&
+               Titulo == produto.Titulo &&
+               Preco == produto.Preco;
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(Titulo, Preco);
     }
 }
 internal class ListAula
